@@ -1,11 +1,8 @@
 def count_maximum(str):
 	ACSII = 256 
-
 	arr_count = [0] * ACSII
-
 	for character in str:
 		arr_count[ord(character)] = arr_count[ord(character)] + 1
-
 	max_value = -1
 	max_index = -1;
 	for i in range(len(arr_count)):
