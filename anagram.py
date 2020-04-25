@@ -17,3 +17,19 @@ def is_anagramm(str_1,str_2) -> bool:
     return True
 
 print(is_anagramm("thang","gthan"))
+
+def agram(str1,str2):
+    arr1 = []
+    arr2 = []
+    if len(str1) != len(str2):
+        return False
+    else:
+        for char in range(len(str1)):
+            arr1.append(ord(str1[char]))
+            arr2.append(ord(str2[char]))
+        if sum(arr1) == sum(arr2):
+            return True
+        else:
+            return False
+
+print(agram("thang","gthanaaa"))
